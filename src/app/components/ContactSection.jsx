@@ -43,7 +43,7 @@ const ContactSection = () => {
   return (
     <section id="contact" className="grid md:grid-cols-2 my-12 md:my-12 py-24 gap-4 relative">
       {/* left side of contact section */}
-      <div className="bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-green-900 to-transparent rounded-full h-80 w-80 z-0 blur-lg absolute left-36 transform -translate-x-1/2 -translate-1/2"></div>
+      <div className="bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-primary-900 to-transparent rounded-full h-80 w-80 z-0 blur-lg absolute left-36 transform -translate-x-1/2 -translate-1/2"></div>
       <div className="z-10">
         <h5 className="text-4xl font-bold text-white mb-5">
           Let&apos;s Connect
@@ -66,7 +66,7 @@ const ContactSection = () => {
       {/* right side of contact section */}
       <div>
         {emailSubmitted ? (
-          <p className="text-green-500 text-sm mt-2">
+          <p className="text-primary-500 text-sm mt-2">
             Email sent successfully!
           </p>
         ) : (
@@ -80,7 +80,7 @@ const ContactSection = () => {
                 type="email"
                 id="email"
                 required
-                className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5 hover:border-green-200"
+                className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5 hover:border-primary-200"
                 placeholder="email@email.com"
               />
             </div>
@@ -109,7 +109,7 @@ const ContactSection = () => {
                 placeholder="let's talk about..."
               />
             </div>
-            <button type="submit" className="bg-green-700 hover:bg-green-800 text-white font-medium py-2.5 px-5 rounded-lg w-full">
+            <button type="submit" className="bg-primary-700 hover:bg-primary-800 text-white font-medium py-2.5 px-5 rounded-lg w-full">
               Send Message
             </button>
           </form>
