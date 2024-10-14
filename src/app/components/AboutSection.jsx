@@ -37,7 +37,7 @@ const TAB_DATA = [
         <li className='mt-4'>
           Spring 2022
           <ul className="list-disc pl-6">
-            <li className="text-class-500">Intro Algs & Data Str.</li>
+            <li className="text-class-500">Intro Algs &amp; Data Str.</li>
           </ul>
         </li>
 
@@ -47,7 +47,7 @@ const TAB_DATA = [
             <li className="text-class-500">Discrete Structures</li>
             <li className="text-class-500">Machine Architecture and Organization</li>
             <li className="text-class-500">Elementary Computational Linear Algebra</li>
-            <li className="text-class-500">Intro to Prob & Stat</li>
+            <li className="text-class-500">Intro to Prob &amp; Stat</li>
           </ul>
         </li>
 
@@ -62,7 +62,7 @@ const TAB_DATA = [
         <li className='mt-4'>
           Fall 2023
           <ul className="list-disc pl-6">
-            <li className="text-class-500">Program Design & Development</li>
+            <li className="text-class-500">Program Design &amp; Development</li>
             <li className="text-class-500">Formal Languages and Automata</li>
             <li className="text-class-500">Intro to Operating Systems</li>
             <li className="text-class-500">Practice of Database Systems</li>
