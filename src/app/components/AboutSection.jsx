@@ -118,8 +118,16 @@ function AboutSection() {
         {/* right side of about me*/}
         <div className='mt-4 md:mt-0  flex flex-col h-full text-center sm:text-left'>
           <h2 className='text-4xl font-bold text-white mb-4'>About Me</h2>
-          <p className='text-base md:text-lg'>
-            dummy text
+          <p className='text-base md:text-lg font-serif text-primary-600'>
+            example text: Hi, I'm Carlos Chasi-Mejia, a passionate software developer with a 
+            strong background in computer science and web development. I recently graduated 
+            from the University of Minnesota with a degree in Computer Science, where I gained
+            hands-on experience in programming languages like Python, Java, JavaScript, and C++. 
+            Throughout my academic journey, I developed a deep interest in problem-solving and 
+            software engineering, and I enjoy working on projects that allow me to apply these 
+            skills creatively. When I'm not coding, you can find me exploring new technologies, 
+            reading, or enjoying outdoor activities. I'm always eager to learn and take on new 
+            challenges in the tech world!
           </p>
           <div className='flex flex-row just mt-8 justify-center sm:justify-start'>
             <TabButton selectTab={() => handleTabChange("skills")} active={tab === "skills"}>Skills</TabButton>

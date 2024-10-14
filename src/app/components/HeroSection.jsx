@@ -29,8 +29,8 @@ const HeroSection = () => {
               repeat={Infinity}
             />
           </h1>
-          <p className='text-[#ADB7BE] text-base sm:text-lg lg:text-xl mb-6'>
-            dummy text
+          <p className='text-[#80FFFF] text-base font-sans sm:text-lg lg:text-xl mb-6'>
+            example text: Software Engineer in the making??? Passionate about software engineering, constantly learning and developing new skills to create innovative and effective solutions.
           </p>
           <div>
             <a 
