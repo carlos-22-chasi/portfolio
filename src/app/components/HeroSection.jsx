@@ -29,10 +29,11 @@ const HeroSection = () => {
               repeat={Infinity}
             />
           </h1>
-          <p className='text-[#80FFFF] text-base font-sans sm:text-lg lg:text-xl mb-6'>
-            example text: Software Engineer in the making??? Passionate about software engineering, constantly learning and developing new skills to create innovative and effective solutions.
+          <p className='text-[#80FFFF] text-base font-sans sm:text-lg lg:text-xl mb-6 mx-2 sm:mx-0'>
+            example text: Software Engineer in the making??? Passionate about software engineering, constantly learning and developing 
+            new skills to create innovative and effective solutions.
           </p>
-          <div>
+          <div className="flex justify-center sm:justify-start">
             <a 
               className='block bg-primary-500 rounded-full px-2 py-2 w-fit'
               href='/resume.pdf'
