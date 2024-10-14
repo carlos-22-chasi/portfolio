@@ -10,9 +10,13 @@ const TAB_DATA = [
     content: (
       <ul className='list-disc pl-2 sm:text-left text-left'>
         <li>Python</li>
-        <li>hi</li>
-        <li>hi</li>
-        <li>hi</li>
+        <li>Java</li>
+        <li>JavaScript</li>
+        <li>TypeScript</li>
+        <li>HTML/CSS</li>
+        <li>SQL</li>
+        <li>C</li>
+        <li>C++</li>
       </ul>
     )
   },
@@ -20,16 +24,71 @@ const TAB_DATA = [
     title: "Education",
     id: "education",
     content: (
-      <ul className='list-disc pl-2 text-left'>
-        <li>UMN</li>
+      <ul className='list-none pl-2 text-left text-red-800'>
+        <p className='text-white text-2xl font-bold'>University of Minnesota - Twin Cities (Graduated 2024)</p>
+        <p className='mt-4 text-white text-2xl font-bold'>2021-2024 CS Courses by Year</p>
+        <li className='mt-1'>
+          Fall 2021
+          <ul className="list-disc pl-6">
+            <li className="text-class-500">Intro to Programming Concepts</li>
+          </ul>
+        </li>
+
+        <li className='mt-4'>
+          Spring 2022
+          <ul className="list-disc pl-6">
+            <li className="text-class-500">Intro Algs & Data Str.</li>
+          </ul>
+        </li>
+
+        <li className='mt-4'>
+          Fall 2022
+          <ul className="list-disc pl-6">
+            <li className="text-class-500">Discrete Structures</li>
+            <li className="text-class-500">Machine Architecture and Organization</li>
+            <li className="text-class-500">Elementary Computational Linear Algebra</li>
+            <li className="text-class-500">Intro to Prob & Stat</li>
+          </ul>
+        </li>
+
+        <li className='mt-4'>
+          Spring 2023
+          <ul className="list-disc pl-6">
+            <li className="text-class-500">Advanced Programming Principles</li>
+            <li className="text-class-500">Algorithms and Data Structures</li>
+          </ul>
+        </li>
+
+        <li className='mt-4'>
+          Fall 2023
+          <ul className="list-disc pl-6">
+            <li className="text-class-500">Program Design & Development</li>
+            <li className="text-class-500">Formal Languages and Automata</li>
+            <li className="text-class-500">Intro to Operating Systems</li>
+            <li className="text-class-500">Practice of Database Systems</li>
+            <li className="text-class-500">Software Engineering I</li>
+          </ul>
+        </li>
+
+        <li className='mt-4'>
+          Spring 2024
+          <ul className="list-disc pl-6">
+            <li className="text-class-500">Internet Programming</li>
+            <li className="text-class-500">Intro to Computer Networks</li>
+            <li className="text-class-500">Intro: Artificial Intelligence</li>
+            <li className="text-class-500">Programming Graphics and Games</li>
+          </ul>
+        </li>
       </ul>
     )
-  }, {
+  }, 
+  {
     title: "Experience",
     id: "experience",
     content: (
       <ul className='list-disc pl-2 text-left'>
-        <li>Target</li>
+        <li><span>2020-2021</span><br/>Cashier at Hy-Vee</li>
+        <li className='mt-4'><span>2021-2024</span><br/>Guest Service Advoate at Target</li>
       </ul>
     )
   }
@@ -47,12 +106,20 @@ function AboutSection() {
 
   return (
     <section className='text-white' id='about'>
-      <div className='grid md:grid-cols-2 gap-8 items-center text-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16'>
-        <Image src='/images/image_page.png' alt='umn mascot' width={500} height={500}/>
+      <div className='grid md:grid-cols-2 gap-8 text-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16'>
+        {/* left side of about me */}
+        <div>
+          <Image src='/images/anime.png' alt='umn mascot' width={400} height={400} />
+          {/* Conditionally render the second image directly under the first image */}
+          {tab === "education" && (
+            <Image src='/images/graduation_pic.jpg' alt='graduation photo' width={400} height={400} className='md:mt-40 mt-2' />
+          )}
+        </div>
+        {/* right side of about me*/}
         <div className='mt-4 md:mt-0  flex flex-col h-full text-center sm:text-left'>
           <h2 className='text-4xl font-bold text-white mb-4'>About Me</h2>
           <p className='text-base md:text-lg'>
-            f;lkjda;lfkjda;ldf this is dummy text for now 
+            dummy text
           </p>
           <div className='flex flex-row just mt-8 justify-center sm:justify-start'>
             <TabButton selectTab={() => handleTabChange("skills")} active={tab === "skills"}>Skills</TabButton>
