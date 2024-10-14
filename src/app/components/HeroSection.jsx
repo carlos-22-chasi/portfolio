@@ -18,7 +18,7 @@ const HeroSection = () => {
             <TypeAnimation
               sequence={[
                 // Same substring at the start will only be typed out once, initially
-                'Carlos',
+                'Carlos 🇲🇽 🇪🇨',
                 2000, // wait 1s before replacing "Mice" with "Hamsters"
                 'Curious',
                 2000,
@@ -33,11 +33,16 @@ const HeroSection = () => {
             dummy text
           </p>
           <div>
-            <button className='px-1 py-1 rounded-full w-full sm:w-fit  bg-gradient-to-br from-primary-300 via-primary-500 to-primary-700 hover:bg-slate-800 text-white mt-3'>
+            <a 
+              className='block bg-primary-500 rounded-full px-2 py-2 w-fit'
+              href='/resume.pdf'
+              target="_blank" /* Opens resume in a new tab */
+              rel="noopener noreferrer"  /* improves security by preventing the new tab from having access to the original page */
+            >
               <span className='block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2'>
               View Resume
               </span>
-            </button>
+            </a>
           </div>
         </motion.div>
         {/* right side of hero section */}

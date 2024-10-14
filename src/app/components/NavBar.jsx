@@ -17,7 +17,7 @@ const NavBar = () => {
   const[navbarOpen, setNavBarOpen] = useState(false);
 
   return (
-    <nav className='fixed top-0 left-0 right-0 z-20 bg-[#121212] bg-opacity-80'>
+    <nav className='fixed top-0 left-0 right-0 z-20 bg-black bg-opacity-80'>
       <div className='flex flex-wrap items-center justify-between mx-auto px-4 py-3'>
         <Link href="/" className='text-2xl md:text-4xl font-semibold text-primary-700 italic'>
         CarlosChasi22
