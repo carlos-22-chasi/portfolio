@@ -20,10 +20,10 @@ const ProjectCard = ({imageURL, title, description, tools, gitUrl, previewURL}) 
         </div>
       </div>
       {/* Bottom Half */}
-      <div className='h-1/2  flex flex-col justify-between text-white mt-3 rounded-b-xl bg-[#181818] py-6 px-4'>
-        <h5 className='text-xl font-semibold mb-2'>{title}</h5>
-        <p className='text-[#386789]'>{description}</p>
-        <p className='text-gray-500'>Tools: {tools}</p>
+      <div className='h-1/2  flex flex-col justify-between text-primary-500 mt-3 rounded-b-xl bg-[#181818] py-1 px-1 md:py-6 md:px-4'>
+        <h5 className='text-lg md:text-xl font-semibold mb-2'>{title}</h5>
+        <p className='text-xs md:text-base text-[#386789]'>{description}</p>
+        <p className='text-xs md:text-base text-gray-500'>Tools: {tools}</p>
       </div>
 
     </div>

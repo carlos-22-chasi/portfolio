@@ -111,7 +111,7 @@ const ProjectSection = () => {
         <ProjectTag onClick={handleTagChange} name="School" isSelected={tag === "School"} />
       </div>
       {/* Project Cards */}
-      <ul ref={ref} className='grid md:grid-cols-3 gap-28 md:gap-12'>
+      <ul ref={ref} className="grid sm:grid-cols-2 md:grid-cols-3 gap-28 md:gap-12">
         {filteredProjects.map((project, index) => (
           <motion.li
             key={index}
@@ -119,7 +119,7 @@ const ProjectSection = () => {
             initial="initial"
             animate={isInView ? "animate" : "initial"}
             transition={{ duration: 0.3, delay: index * 0.4 }}
-            className='min-h-[350px] h-full'
+            className="h-96 md:h-full"
           >
             <ProjectCard
               key={project.id}
@@ -130,9 +130,10 @@ const ProjectSection = () => {
               gitUrl={project.gitUrl}
               previewURL={project.previewUrl}
             />
-          </motion.li>
-        ))}
-      </ul>
+    </motion.li>
+  ))}
+</ul>
+
     </section>
   )
 }
