@@ -14,7 +14,7 @@ const projectsData = [
     image: "/images/drone.png",
     tag: ["All", "School"],
     gitUrl: "https://hub.docker.com/r/carloscm22/drone_sim_project4",
-    previewUrl: "/",
+    previewUrl: "/NotAvailable",
   },
   {
     id: 2,
@@ -25,7 +25,7 @@ const projectsData = [
     image: "/images/sorting-alg.png",
     tag: ["All", "Personal"],
     gitUrl: "https://github.com/carlos-22-chasi/Sorting-Algorithm-Visualizer/tree/main",
-    previewUrl: "/",
+    previewUrl: "/NotAvaialble",
   },
   {
     id: 3,
@@ -35,8 +35,8 @@ const projectsData = [
     tools: "Flask, JS, Python",
     image: "/images/spotify.png",
     tag: ["All", "Personal"],
-    gitUrl: "/",
-    previewUrl: "/",
+    gitUrl: "https://github.com/carlos-22-chasi/Spotify-Playlist-Recommender",
+    previewUrl: "/NotAvailable",
   },
   {
     id: 4,
@@ -48,7 +48,7 @@ const projectsData = [
     tools: "TypeScript",
     image: "/images/drawings.png",
     tag: ["All", "School"],
-    gitUrl: "/",
+    gitUrl: "https://github.com/CSCI-4611-Spring-2024/Assignments/blob/main/Assignment-6/README.md",
     previewUrl: "https://csci-4611-spring-2024.github.io/assignment-6-carlos-22-chasi/",
   },
   {
@@ -58,8 +58,8 @@ const projectsData = [
     tools: "JS, CSS, HTML",
     image: "/images/pacman.png",
     tag: ["All", "Personal"],
-    gitUrl: "/",
-    previewUrl: "https://github.com/carlos-22-chasi/pacman-game",
+    gitUrl: "https://github.com/carlos-22-chasi/pacman-game",
+    previewUrl: "https://pacman-game-one.vercel.app/",
   },
   {
     id: 6,
@@ -69,7 +69,7 @@ const projectsData = [
     tools: "TypeScript",
     image: "/images/globe.png",
     tag: ["All", "School"],
-    gitUrl: "/",
+    gitUrl: "https://github.com/CSCI-4611-Spring-2024/Assignments/blob/main/Assignment-3/README.md",
     previewUrl: "https://csci-4611-spring-2024.github.io/assignment-3-carlos-22-chasi",
   },
   {
