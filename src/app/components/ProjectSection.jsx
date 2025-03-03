@@ -25,7 +25,7 @@ const projectsData = [
     image: "/images/sorting-alg.png",
     tag: ["All", "Personal"],
     gitUrl: "https://github.com/carlos-22-chasi/Sorting-Algorithm-Visualizer/tree/main",
-    previewUrl: "/NotAvaialble",
+    previewUrl: "/NotAvailable",
   },
   {
     id: 3,
